@@ -126,3 +126,27 @@ body .markdown-section {
 .markdown-section blockquote {
     border-radius: 6px;
 }
+
+/* Show the PREVIOUS and NEXT page links at full strength */
+.pagination-item .pagination-item-label {
+    opacity: 1 !important;
+}
+
+/* Show the Edit this Page link as a small outlined button */
+.markdown-section a.edit-link {
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    border: 1px solid var(--theme-color);
+    border-radius: 999px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.markdown-section a.edit-link:hover {
+    background: color-mix(in srgb, var(--theme-color) 10%, transparent);
+}
+
+/* Tint table header rows with the accent colour */
+.markdown-section th {
+    background: color-mix(in srgb, var(--theme-color) 10%, transparent);
+}
