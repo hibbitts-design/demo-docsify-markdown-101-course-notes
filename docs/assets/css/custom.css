@@ -91,23 +91,23 @@ body .markdown-section {
 }
 */
 
-/* Example custom CSS: orange accent colour, page title accent bar and tinted blockquotes, in both light and dark mode */
+/* Example custom CSS: raspberry accent colour, page title accent bar and tinted blockquotes, in both light and dark mode */
 :root {
-    --theme-color: #C2410C;
-    --link-color: #C2410C;
+    --theme-color: #A3143F;
+    --link-color: #A3143F;
     --link-color-hover: var(--link-color);
-    --link-underline-color: #C2410C;
-    --blockquote-border-color: #C2410C;
+    --link-underline-color: #A3143F;
+    --blockquote-border-color: #A3143F;
     --blockquote-bg: color-mix(in srgb, var(--theme-color) 8%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
 :root {
-    --theme-color: #FDBA74;
-    --link-color: #FDBA74;
+    --theme-color: #E8799A;
+    --link-color: #E8799A;
     --link-color-hover: var(--link-color);
-    --link-underline-color: #FDBA74;
-    --blockquote-border-color: #FDBA74;
+    --link-underline-color: #E8799A;
+    --blockquote-border-color: #E8799A;
     }
 }
 
