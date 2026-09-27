@@ -37,7 +37,3 @@ Renders to:
 3. Third step
 
 **Tip**: if you just use `1.` for every item, Markdown numbers them automatically &ndash; handy when reordering steps later.
-
----
-
-Next: [Code and Tables](04-code-and-tables.md)

@@ -49,7 +49,3 @@ flowchart TD
     B -- No --> D[Just keep writing]
     C --> E[Docsify-This renders it]
 ```
-
----
-
-Next: [Practice Exercise](08-practice-exercise.md)

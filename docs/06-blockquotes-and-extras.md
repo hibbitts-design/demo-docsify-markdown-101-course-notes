@@ -67,7 +67,3 @@ Renders to:
 Markdown was created by John Gruber.[^1]
 
 [^1]: [Markdown - John Gruber](https://daringfireball.net/projects/markdown/)
-
----
-
-Next: [LaTeX and Mermaid](07-latex-and-mermaid.md)

@@ -83,7 +83,3 @@ Renders to:
 | ---------- | -----: |
 | Homework 1 |    10% |
 | Midterm    |    30% |
-
----
-
-Next: [Links and Images](05-links-and-images.md)

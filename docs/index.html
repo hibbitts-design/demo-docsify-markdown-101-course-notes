@@ -164,8 +164,8 @@
       pagination: {
         previousText: 'PREVIOUS',
         nextText: 'NEXT',
-        crossChapter: false,
-        crossChapterText: false,
+        crossChapter: true,
+        crossChapterText: true,
       },
 
       toc: {
@@ -264,7 +264,7 @@
             var editHtml = '[:memo:' + editThisPageLinkText + '](' + url + ' ":class=edit-link")\n'
 
             if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
-              return html + '<br />' + '\n\n' + editHtml
+              return html + '\n\n---\n\n' + editHtml
             } else {
               return html
             }

@@ -55,7 +55,3 @@ Renders to: _rendered as italicized text_
 ```
 
 Renders to: ~~Strike through this text.~~
-
----
-
-Next: [Lists](03-lists.md)

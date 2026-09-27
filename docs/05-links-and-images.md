@@ -53,7 +53,3 @@ and using a local image (which also displays on GitHub):
 ```
 
 ![Image of Octocat](images/octocat.png)
-
----
-
-Next: [Blockquotes and Extras](06-blockquotes-and-extras.md)
