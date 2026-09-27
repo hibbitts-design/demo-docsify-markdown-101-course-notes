@@ -90,3 +90,39 @@ body .markdown-section {
     --blockquote-border-color: #0B1660;
 }
 */
+
+/* Example custom CSS: orange accent colour, page title accent bar and tinted blockquotes, in both light and dark mode */
+:root {
+    --theme-color: #C2410C;
+    --link-color: #C2410C;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #C2410C;
+    --blockquote-border-color: #C2410C;
+    --blockquote-bg: color-mix(in srgb, var(--theme-color) 8%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+    --theme-color: #FDBA74;
+    --link-color: #FDBA74;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #FDBA74;
+    --blockquote-border-color: #FDBA74;
+    }
+}
+
+/* Short accent bar under each page title */
+.markdown-section h1::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 4px;
+    margin-top: 0.4rem;
+    border-radius: 2px;
+    background: var(--theme-color);
+}
+
+/* Rounded corners for the tinted blockquotes */
+.markdown-section blockquote {
+    border-radius: 6px;
+}
