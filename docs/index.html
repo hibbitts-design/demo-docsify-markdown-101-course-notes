@@ -279,9 +279,9 @@
 
             if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
               if (editThisPageLinkPosition === 'top') {
-                return editHtml + '\n\n' + html
+                return editHtml + '\n' + html
               } else {
-                return html + '\n\n' + editHtml
+                return html + '<br />' + '\n\n' + editHtml
               }
             } else {
               return html
