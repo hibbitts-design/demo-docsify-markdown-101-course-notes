@@ -272,7 +272,9 @@
               lines[lines.length - 1] = '[' + lines[lines.length - 1] + ']';
             }
             var editHtml = lines.map(function (line) {
-              return line.replace(/\[([^\]]+)\](?!\()/, '[:memo:$1](' + url + ' ":class=edit-link")');
+              return line.replace(/\[([^\]]+)\](?!\()/, function (match, linkText) {
+                return '[:memo:' + linkText + '](' + url + ' ":class=edit-link")';
+              });
             }).join('\n\n') + '\n'
 
             if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
