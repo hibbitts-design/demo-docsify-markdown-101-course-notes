@@ -99,6 +99,10 @@ body .markdown-section {
     --link-underline-color: #A3143F;
     --blockquote-border-color: #A3143F;
     --blockquote-bg: color-mix(in srgb, var(--theme-color) 8%, transparent);
+
+    /* Shared corner rounding and accent tint used by the rules below */
+    --demo-radius: 6px;
+    --demo-tint: color-mix(in srgb, var(--theme-color) 10%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,7 +128,12 @@ body .markdown-section {
 
 /* Rounded corners for the tinted blockquotes */
 .markdown-section blockquote {
-    border-radius: 6px;
+    border-radius: 0 var(--demo-radius) var(--demo-radius) 0;
+}
+
+/* Match the rounded corners of code blocks to the blockquotes */
+.markdown-section pre {
+    --border-radius: var(--demo-radius);
 }
 
 /* Show the PREVIOUS and NEXT page links at full strength */
@@ -143,10 +152,26 @@ body .markdown-section {
 }
 
 .markdown-section a.edit-link:hover {
-    background: color-mix(in srgb, var(--theme-color) 10%, transparent);
+    background: var(--demo-tint);
 }
 
 /* Tint table header rows with the accent colour */
 .markdown-section th {
-    background: color-mix(in srgb, var(--theme-color) 10%, transparent);
+    background: var(--demo-tint);
+}
+
+/* Show the language label on code blocks (such as markdown) in the accent colour */
+.markdown-section pre[data-lang]:not([data-lang="markup"])::after {
+    color: var(--theme-color);
+    opacity: 1;
+}
+
+/* Mark the current page or section in the sidebar with a tinted background */
+.sidebar-nav li.active > a,
+.sidebar-nav li.active > a.page-link,
+.sidebar-nav li.active > a.page-link:only-child {
+    background-color: var(--demo-tint);
+    border-radius: var(--demo-radius);
+    padding-left: 0.5em;
+    margin-left: -0.5em;
 }
