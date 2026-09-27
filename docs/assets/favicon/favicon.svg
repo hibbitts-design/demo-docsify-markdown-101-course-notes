@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -40 208 208">
+  <!-- Markdown mark by Dustin Curtis (CC0), https://github.com/dcurtis/markdown-mark -->
+  <style>
+    .box { fill: #1F2328; }
+    .mark { fill: #FFFFFF; }
+    @media (prefers-color-scheme: dark) {
+      .box { fill: #E6EDF3; }
+      .mark { fill: #1F2328; }
+    }
+  </style>
+  <rect class="box" width="208" height="128" rx="15"/>
+  <path class="mark" d="M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0l-30-33h20V30h20v35h20z"/>
+</svg>
