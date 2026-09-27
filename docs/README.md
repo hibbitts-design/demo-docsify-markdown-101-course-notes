@@ -23,4 +23,4 @@ No prior experience is required. By the end, you'll be able to write headings, l
 
 ---
 
-> Course content partly adapted from Paul Hibbitts' [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), with additional original material, used originally as an example course for demonstrating [Docsify-This](https://docsify-this.net).
+> Course content partly adapted from Paul Hibbitts' [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), with additional original material, used originally as an example course for demonstrating [Docsify-This](https://docsify-this.net). The site's visual styling is an example of what's possible with [custom CSS](https://github.com/hibbitts-design/demo-docsify-markdown-101-course-notes/blob/main/docs/assets/css/custom.css) in a [Docsify Open Course Starter Kit](https://github.com/hibbitts-design/docsify-open-course-starter-kit).
