@@ -42,7 +42,7 @@
 
   <!-- Mermaid -->
   <!-- Uncomment the line below to render ```mermaid code blocks as diagrams -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"></script>
 
 </head>
 
@@ -62,7 +62,7 @@
     var ToC = false;
 
     // Set navbar to true to permanently override the hiding of the Navbar when standalone is true
-    var navbar = false;
+    var navbar = true;
 
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
@@ -128,8 +128,8 @@
     window.$docsify = {
       // GENERAL SETTINGS
       // -----------------------------------------------------------------
-      name: 'Docsify Open Course Starter Kit',
-      homepage: 'home.md',
+      name: 'Markdown 101 Course Notes',
+      homepage: 'README.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || false),
       loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar || false),
       mergeNavbar: true,
@@ -157,6 +157,7 @@
         depth: 6,
         namespace: 'docsify-open-course-starter-kit' + Date.now(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+        insertBefore: '.sidebar-nav'
       },
  
       pagination: {
@@ -342,14 +343,14 @@
   </script>
 
   <!-- Search Box Plugin -->
-  <!-- <script src="assets/js/search.min.js"></script> -->
+  <script src="assets/js/search.min.js"></script>
 
   <!-- Font Awesome Plugin -->
   <script src="assets/js/docsify-fontawesome.min.js"></script>
 
   <!-- LaTeX Plugin (uncomment both lines to use, note that text between $ signs will be treated as math) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-latex@0.5.2/dist/docsify-latex.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-latex@0.5.2/dist/docsify-latex.min.js"></script>
 
   <!-- Tabs Plugin-->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>

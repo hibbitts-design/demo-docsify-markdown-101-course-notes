@@ -1,5 +1,2 @@
-* [Schedule](schedule.md)
-* [Topics](topics.md)
-* [Resources](resources.md)
-* [UX Techniques Guide](ux-techniques-guide.md)
-* [Contact](contact.md)
+* [GitHub](https://github.com)
+* [Markdown Guide](https://www.markdownguide.org/)
