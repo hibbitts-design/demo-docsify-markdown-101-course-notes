@@ -53,8 +53,12 @@
     // Enter the URL of your own GitHub Repository in between the two quotes below
     var gitLinkRepoURL = 'https://github.com/hibbitts-design/demo-docsify-markdown-101-course-notes';
 
+    // Choose where the Edit this Page link appears, either 'top' or 'bottom'
+    var editThisPageLinkPosition = 'bottom';
+
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
-    var editThisPageLinkText = 'Edit this Page';
+    // Put the link text in [ ] and use \n to start a new line, such as ---\n for a horizontal rule or <br />\n for extra space
+    var editThisPageLinkText = '---\n[Edit this Page]';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
     var standalone = false;
@@ -261,10 +265,22 @@
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
-            var editHtml = '[:memo:' + editThisPageLinkText + '](' + url + ' ":class=edit-link")\n'
+            // Each line of editThisPageLinkText becomes its own paragraph, and the text in [ ] becomes the link
+            // If there are no [ ], the last line becomes the link
+            var lines = editThisPageLinkText.split('\n').map(function (line) { return line.trim(); }).filter(Boolean);
+            if (!/\[[^\]]+\](?!\()/.test(editThisPageLinkText)) {
+              lines[lines.length - 1] = '[' + lines[lines.length - 1] + ']';
+            }
+            var editHtml = lines.map(function (line) {
+              return line.replace(/\[([^\]]+)\](?!\()/, '[:memo:$1](' + url + ' ":class=edit-link")');
+            }).join('\n\n') + '\n'
 
             if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
-              return html + '\n\n---\n\n' + editHtml
+              if (editThisPageLinkPosition === 'top') {
+                return editHtml + '\n\n' + html
+              } else {
+                return html + '\n\n' + editHtml
+              }
             } else {
               return html
             }
