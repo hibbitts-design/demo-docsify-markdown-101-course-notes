@@ -4,6 +4,9 @@
 ### XX/XX/2026
 
 **Improved:**
+* Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), turned on with the new mermaidDiagrams setting and loaded only on pages with diagrams
+* Updated MathJax from 2 to 3.2.2 in the optional LaTeX Plugin lines, adding chemistry (\ce) and other LaTeX extras
+* Draw Mermaid diagrams in Mermaid's dark theme when the page is in dark mode (as the Grav Mermaid plugin does)
 * Load Embedly platform.js unconditionally instead of only when a card is detected in the DOM
 * Add collapsible mobile ToC toggle and fix mobile width/rule bugs
 * Pad and contain responsive table labels so long headers don't collide or overflow on mobile
@@ -14,6 +17,8 @@
 * Enable crossChapter and use a patched pagination plugin that skips external links
 * Show pagination page names when the sidebar is hidden, with smaller titles on phones
 * Give long navbars (6 or more links) room for their extra rows on phones
+* Support a top Edit this Page link below full-width header images
+* Add local backup copies of default sidebar icons and README note
 
 **Bugfix:**
 * Replaced icongr.am icons with Iconify API (Font Awesome 6)
