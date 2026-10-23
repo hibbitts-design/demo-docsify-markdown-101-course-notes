@@ -91,13 +91,13 @@ body .markdown-section {
 }
 */
 
-/* Example custom CSS: raspberry accent colour, page title accent bar and tinted blockquotes, in both light and dark mode */
+/* Example custom CSS: blue accent colour (a more saturated take on the Grav Open Course Hub slate blue), page title accent bar and tinted blockquotes, in both light and dark mode */
 :root {
-    --theme-color: #A3143F;
-    --link-color: #A3143F;
+    --theme-color: #2F508E;
+    --link-color: #2F508E;
     --link-color-hover: var(--link-color);
-    --link-underline-color: #A3143F;
-    --blockquote-border-color: #A3143F;
+    --link-underline-color: #2F508E;
+    --blockquote-border-color: #2F508E;
     --blockquote-bg: color-mix(in srgb, var(--theme-color) 8%, transparent);
 
     /* Shared corner rounding and accent tint used by the rules below */
@@ -107,11 +107,11 @@ body .markdown-section {
 
 @media (prefers-color-scheme: dark) {
 :root {
-    --theme-color: #E8799A;
-    --link-color: #E8799A;
+    --theme-color: #92B1E8;
+    --link-color: #92B1E8;
     --link-color-hover: var(--link-color);
-    --link-underline-color: #E8799A;
-    --blockquote-border-color: #E8799A;
+    --link-underline-color: #92B1E8;
+    --blockquote-border-color: #92B1E8;
     }
 }
 
